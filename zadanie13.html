@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+    <meta name="=viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Zadanie 13</title>
+
+    <style>
+        body:hover{
+            cursor:default;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .table-container{
+            text-align:center;
+            min-height:300px;
+            min-width:300px;
+            margin-top:50px;
+        }
+
+        table {
+            background-color:#675c5a;
+            border-radius:7px;
+        }
+        th{
+            color:#201e1f;
+            font-weight:800;
+        }
+
+        td {
+            background-color: #78706e;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        td, th{
+            text-align:center;
+            width:50px;
+            height:50px;
+        }
+
+        table, td, th{
+            border-width:1px;
+            border-style:solid;
+            border-color:black;
+        }
+
+        .merged {
+            background-color: #756563;
+        }
+
+        h2{
+            text-shadow:1px 1px 2px black;
+        }
+
+        .btn {
+            border-radius: 5px;
+            border-style: double;
+            border-width: 1px;
+            border-color: black;
+            background-color: #675c5a;
+            font-weight: 800;
+            color: #cdbca8;
+            margin-top:20px;
+            margin-left:20px;
+            position:fixed;
+        }
+
+            .btn:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                background-color: #78706e;
+            }
+    </style>
+</head>
+<body>
+    <a href="index.html"><button class="btn">powrót</button></a>
+    <div class="container">
+    <div class="table-container">
+        <h2>Tabela</h2>
+        <table>
+            <tr>
+                <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+            </tr>
+            <tr>
+                <th>2</th> <td>a</td> <td>b</td> <td>c</td> <td>d</td> <td>e</td>
+            </tr>
+            <tr>
+                <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td>j</td>
+            </tr>
+            <tr>
+                <th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td> <td>o</td>
+            </tr>
+            <tr>
+                <th>5</th> <td>p</td> <td>q</td> <td>r</td> <td>s</td> <td>t</td>
+            </tr>
+            <tr>
+                <th>6</th> <td>u</td> <td>v</td> <td>w</td> <td>y</td> <td>z</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <h2>Tabela - scalanie</h2>
+        <table>
+            <tr>
+                <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+            </tr>
+            <tr>
+                <th>2</th> <td>a</td> <td colspan="2" class="merged">b, c</td> <td>d</td> <td>e</td>
+            </tr>
+            <tr>
+                <th>3</th> <td>f</td> <td>g</td> <td>h</td> <td>i</td> <td rowspan="2" class="merged">j, o</td>
+            </tr>
+            <tr>
+                <th>4</th> <td>k</td> <td>l</td> <td>m</td> <td>n</td>
+            </tr>
+            <tr>
+                <th>5</th> <td colspan="3" rowspan="2" class="merged">p, q, r, u, v, w</td> <td>s</td> <td>t</td>
+            </tr>
+            <tr>
+                <th>6</th> <td>y</td> <td>z</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table-container">
+    <h2>Tabela - inicja³y</h2>
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>a</td> <td>b</td> <td>c</td> <td>d</td> <td>e</td>
+        </tr>
+        <tr>
+            <th>3</th> <td colspan="2" rowspan="3" class="merged">f, g, k, l, p, q</td> <td>h</td> <td>i</td> <td>j</td>
+        </tr>
+        <tr>
+            <th>4</th> <td>m</td> <td>n</td> <td>o</td>
+        </tr>
+        <tr>
+            <th>5</th> <td>r</td> <td>s</td> <td>t</td>
+        </tr>
+        <tr>
+            <th>6</th> <td>u</td> <td>v</td> <td>w</td> <td>y</td> <td>z</td>
+        </tr>
+    </table>
+</div>
+</div>
+</body>
+</html>
