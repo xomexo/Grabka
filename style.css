@@ -8,3 +8,22 @@ body {
 a{
     text-decoration:none;
 }
+
+.back {
+    border-radius: 5px;
+    border-style: double;
+    border-width: 1px;
+    border-color: black;
+    background-color: #675c5a;
+    font-weight: 800;
+    color: #cdbca8;
+    margin-top:20px;
+    margin-left:20px;
+    position:fixed;
+}
+
+    .back:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        background-color: #78706e;
+    }
