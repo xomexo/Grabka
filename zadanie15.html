@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Definiowanie kotwic w konkretnym miejscu strony</title>
+    <meta charset="UTF-8">
+    <style>
+    img{
+        height: 450px;
+    }
+    </style>
+</head>
+<body>
+  
+    <h1>Jak definiujemy kotwicę na stronie:</h1>
+
+    <section>
+        <h2 id="a_top">Tutaj zdefiniowaliśmy kotwicę o nazwie <i>a_top</i></h2>
+        <p>
+            <a href="#a_bottom">To jest link do kotwicy dolnej</a>
+        </p>
+        <figure>
+            <img src="https://toptun.pl/userdata/public/gfx/414056/VOLKSWAGEN-PASSAT-B6-2005-2010-SEDAN-CHLAPACZE.jpg" >
+          
+            <figcaption>
+                Rysunek 1. Passat B6
+            </figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <br /><br /><br />
+        <p>
+            Zdefiniowanie kotwicy w konkretnym miejscu dokumentu HTML<br />
+            i wskazanie tej kotwicy w linku do tego dokumentu,<br />
+            spowoduje po jego otwarciu, przewinięcie -<br />
+            tak aby wiersz zawierający kotwicę znajdował się jak najbliżej górnej krawędzi okna przeglądarki.<br />
+            Aby było co przewijać dodamy dwa rysunki kotwic oraz linie puste,<br />
+            a następnie, zdefiniujemy dwie kotwice.
+        </p>
+        <br /><br /><br />
+    </section>
+
+    <section>
+        <a name="a_bottom"></a>
+        <h2>Tutaj została zdefiniowana kotwica o nazwie <i>a_bottom</i></h2>
+      
+        <p>
+            <a href="#a_top">To jest link do kotwicy górnej</a>
+        </p>
+      
+        <figure>
+            <img src="https://berqwp-cdn.sfo3.cdn.digitaloceanspaces.com/cache/vwzone.pl/wp-content/uploads/2023/09/Volkswagen-Passat-Alltrack-B9-1-jpg.webp">
+            <figcaption>
+                Rysunek 2. Passat B9
+            </figcaption>
+        </figure>
+    </section>
+  
+</body>
+</html>
